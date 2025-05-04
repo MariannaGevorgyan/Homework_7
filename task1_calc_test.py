@@ -2,7 +2,12 @@ from selenium import webdriver
 from calc_page_object import Calculator
 from selenium.webdriver.common.by import By
 import time
+import allure
 
+@allure.severity("blocker")
+@allure.feature("Сумма окончательная")
+@allure.title("Calculator")
+@allure.description("Проверка калькулятора на корректную отработку")
 
 def test_calculator_form():
     browser = webdriver.Chrome()

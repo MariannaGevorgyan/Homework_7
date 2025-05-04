@@ -3,6 +3,13 @@ from shop_page_auth import Authorization
 from shop_page_select import Product
 from shop_page_checkout import Checkout
 from shop_page_form import Form
+import allure
+
+
+@allure.severity("blocker")
+@allure.feature("расчет окончательной суммы")
+@allure.title("Shop")
+@allure.description("Проверка корректной отработки авторизации,выбор и  добавление товаров в корзину и расчет  окончательной суммы")
 
 
 def test_shop():
